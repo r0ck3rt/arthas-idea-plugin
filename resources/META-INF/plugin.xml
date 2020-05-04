@@ -288,6 +288,10 @@
                 text="Logger"
                 description="Print logger info, and update the logger level">
         </action>
+        <action id="AboutSupportAction"
+                class="com.github.wangji92.arthas.plugin.action.arthas.AboutSupportAction"
+                text="About...">
+        </action>
 
 
         <group id="arthas-plugin" popup="true" text="Arthas Command">
@@ -325,7 +329,13 @@
             <reference ref="ArthasInstallCommand"/>
             <separator/>
             <reference ref="ArthasHelpCommand"/>
+            <reference ref="AboutSupportAction"/>
         </group>
     </actions>
 
+    <project-components>
+        <component>
+            <implementation-class>com.github.wangji92.arthas.plugin.core.ToolkitProject</implementation-class>
+        </component>
+    </project-components>
 </idea-plugin>
