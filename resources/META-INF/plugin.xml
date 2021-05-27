@@ -361,6 +361,12 @@
                 description="Time tunnel">
 
         </action>
+        <action id="ArthasVmToolCommand"
+                class="com.github.wangji92.arthas.plugin.action.arthas.ArthasVmToolCommandAction"
+                text="VmTool"
+                description="VmTool">
+
+        </action>
         <action id="ArthasSetStaticFieldCommand"
                 class="com.github.wangji92.arthas.plugin.action.arthas.ArthasOgnlSetStaticFieldCommandAction"
                 text="Reflect To Modify Static Field"
@@ -546,6 +552,7 @@
             <reference ref="ArthasStackCommand"/>
             <reference ref="ArthasMonitorCommand"/>
             <reference ref="ArthasTimeTunnelCommand"/>
+            <reference ref="ArthasVmToolCommand"/>
             <separator text="* Spring ApplicationContext getBean"/>
             <reference ref="ArthasInvokeBeanMethod"/>
             <reference ref="ArthasWatchOgnlSpringContextInvokeMethodAction"/>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.github.wangji92.arthas.plugin.ui.ArthasVmToolDialog">
+  <grid id="27dc6" binding="contentPane" layout-manager="FormLayout">
+    <rowspec value="center:21px:noGrow"/>
+    <rowspec value="top:21dlu:noGrow"/>
+    <rowspec value="top:19dlu:noGrow"/>
+    <rowspec value="center:28px:noGrow"/>
+    <rowspec value="center:33px:noGrow"/>
+    <rowspec value="top:20dlu:noGrow"/>
+    <rowspec value="top:20dlu:noGrow"/>
+    <rowspec value="center:37px:noGrow"/>
+    <rowspec value="top:20dlu:noGrow"/>
+    <rowspec value="center:21px:noGrow"/>
+    <rowspec value="top:18dlu:noGrow"/>
+    <rowspec value="top:21dlu:noGrow"/>
+    <colspec value="fill:78px:noGrow"/>
+    <colspec value="left:57dlu:noGrow"/>
+    <colspec value="left:3dlu:noGrow"/>
+    <colspec value="fill:271px:noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:max(d;4px):noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:max(d;4px):noGrow"/>
+    <constraints>
+      <xy x="20" y="22" width="612" height="433"/>
+    </constraints>
+    <properties>
+      <toolTipText value=""/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="eef42" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <text value="classloader hash"/>
+          <toolTipText value="可以通过help vmtool 获取帮助信息"/>
+        </properties>
+      </component>
+      <component id="ff98" class="javax.swing.JTextField" binding="classLoaderHashTextField">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="118be" class="javax.swing.JComboBox" binding="expandComboBox">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <editable value="true"/>
+          <model/>
+        </properties>
+      </component>
+      <component id="54af4" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <text value="expand"/>
+          <toolTipText value="--expand 1"/>
+        </properties>
+      </component>
+      <component id="74dfa" class="com.intellij.ui.components.labels.LinkLabel" binding="helpLink" custom-create="true">
+        <constraints>
+          <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <text value="help"/>
+          <toolTipText value="可以通过help vmtool 获取帮助信息"/>
+        </properties>
+      </component>
+      <component id="99c61" class="com.intellij.ui.components.labels.LinkLabel" binding="vmtoolBestLink" custom-create="true">
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <text value="vmtool best example"/>
+        </properties>
+      </component>
+      <component id="f2991" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="11" column="3" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <text value="see: https://arthas.aliyun.com/doc/vmtool.html"/>
+        </properties>
+      </component>
+      <component id="2c335" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <text value="vmtool"/>
+          <toolTipText value="可以通过help vmtool 获取帮助信息"/>
+        </properties>
+      </component>
+      <component id="2bb5f" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <text value="--className"/>
+          <toolTipText value="可以通过help vmtool 获取帮助信息"/>
+        </properties>
+      </component>
+      <component id="1883c" class="javax.swing.JLabel" binding="classNameLabel">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <text value="com.example"/>
+          <toolTipText value="可以通过idea copy reference 获取"/>
+        </properties>
+      </component>
+      <component id="8b80c" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <text value="classLoaderClass"/>
+          <toolTipText value="可以通过help vmtool 获取帮助信息"/>
+        </properties>
+      </component>
+      <component id="c786d" class="javax.swing.JTextField" binding="classLoaderClassTextField">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="9d963" class="javax.swing.JButton" binding="closeButton">
+        <constraints>
+          <grid row="10" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <text value="close"/>
+        </properties>
+      </component>
+      <component id="b6ab3" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <text value="express"/>
+          <toolTipText value="可以通过help vmtool 获取帮助信息"/>
+        </properties>
+      </component>
+      <component id="8df27" class="javax.swing.JTextField" binding="expressTextField">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+        </properties>
+      </component>
+      <component id="5783a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <text value="libPath"/>
+          <toolTipText value="可以通过help vmtool 获取帮助信息"/>
+        </properties>
+      </component>
+      <component id="61ed5" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <text value="limit"/>
+          <toolTipText value="可以通过help vmtool 获取帮助信息"/>
+        </properties>
+      </component>
+      <component id="8027" class="javax.swing.JComboBox" binding="limitComboBox">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <editable value="true"/>
+          <model/>
+        </properties>
+      </component>
+      <component id="3742f" class="javax.swing.JTextField" binding="libPathTextField">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="88c58" class="javax.swing.JButton" binding="vmtoolButton">
+        <constraints>
+          <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="11"/>
+          <text value="copy command"/>
+          <toolTipText value="可以通过help vmtool 获取帮助信息"/>
+        </properties>
+      </component>
+      <component id="a7013" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false"/>
+        </constraints>
+        <properties>
+          <text value="action"/>
+          <toolTipText value="可以通过help vmtool 获取帮助信息"/>
+        </properties>
+      </component>
+      <component id="ba574" class="javax.swing.JComboBox" binding="actionComboBox">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <editable value="true"/>
+          <model/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
